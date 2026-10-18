@@ -52,23 +52,10 @@ body{
   border-radius:6px;
 }
 
-.announcement{
-  background:linear-gradient(180deg, rgba(42,157,143,0.06), rgba(42,157,143,0.03));
-  color:var(--muted);
-  text-align:center;
-  padding:8px 12px;
-  font-size:0.95rem;
-  border-bottom:1px solid var(--border);
-}
-
 .site-header{background:transparent; border-bottom:1px solid var(--border)}
 .header-inner{display:flex;align-items:center;justify-content:space-between;padding:12px 0}
 .brand{display:flex;align-items:center;gap:12px}
-.brand-logo{background:none;border:none;font-weight:600;font-size:1.125rem;color:var(--text);cursor:default}
-.status-pill{
-  font-size:0.75rem;color:var(--muted);
-  background:transparent;padding:6px 8px;border-radius:999px;border:1px solid var(--border)
-}
+.brand-logo{font-weight:600;font-size:1.125rem;color:var(--text)}
 
 .main-nav{position:relative}
 .nav-toggle{display:none;background:none;border:1px solid var(--border);padding:8px;border-radius:8px}
@@ -143,4 +130,8 @@ input:focus, select:focus, textarea:focus{
   *{transition:none !important}
 }
 
-.work-in-progress{font-size:0.95rem;color:var(--muted)}
+.about{padding:36px 0}
+.about section{margin-top:28px}
+.about ul{margin:12px 0;padding-left:1.25rem}
+.footer-meta a{color:var(--text);text-decoration:none}
+.footer-meta a:hover{text-decoration:underline}

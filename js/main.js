@@ -65,7 +65,7 @@ document.addEventListener('DOMContentLoaded', function () {
     form.addEventListener('submit', function (e) {
       e.preventDefault();
       if (validate()) {
-        status.textContent = 'Thank you — your message has been recorded locally for demonstration. No messages are sent from this demo.';
+        status.textContent = 'Thank you. We will be in touch soon.';
         status.style.color = 'var(--muted)';
         form.reset();
       } else {
