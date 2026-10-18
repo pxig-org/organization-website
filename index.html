@@ -8,146 +8,137 @@
   <link rel="stylesheet" href="css/styles.css">
   <script defer src="js/main.js"></script>
 </head>
-<body>
+<body class="landing">
   <a class="skip-link" href="#main">Skip to content</a>
 
-  <header class="site-header" role="banner">
-    <div class="container header-inner">
+  <header class="site-header site-header--editorial" role="banner">
+    <div class="container container--narrow header-inner">
       <div class="brand">
         <a class="brand-link" href="index.html" aria-label="Organization home">
-          <svg class="brand-mark" width="28" height="28" viewBox="0 0 28 28" aria-hidden="true" focusable="false">
-            <rect x="1" y="1" width="26" height="26" rx="4" fill="none" stroke="currentColor" stroke-width="1.5"/>
-            <circle cx="14" cy="14" r="5" fill="currentColor"/>
+          <svg class="brand-mark" width="22" height="22" viewBox="0 0 22 22" aria-hidden="true" focusable="false">
+            <rect x="1" y="1" width="20" height="20" rx="3" fill="none" stroke="currentColor" stroke-width="1.5"/>
           </svg>
           <span class="wordmark-text" data-org-name>Organization</span>
         </a>
       </div>
       <nav class="main-nav" role="navigation" aria-label="Main navigation">
         <button type="button" class="nav-toggle" aria-expanded="false" aria-controls="nav-list" aria-label="Toggle menu">&#9776;</button>
-        <ul id="nav-list" class="nav-list">
-          <li><a href="index.html" aria-current="page">Home</a></li>
+        <ul id="nav-list" class="nav-list nav-list--editorial">
           <li><a href="#overview">Overview</a></li>
           <li><a href="#principles">Principles</a></li>
-          <li><a href="#approach">Approach</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
       </nav>
     </div>
   </header>
 
-  <main id="main">
-    <div class="container">
-      <section class="hero" aria-labelledby="hero-heading">
-        <div class="hero-content reveal">
-          <p class="hero-eyebrow">Our organization</p>
-          <h1 id="hero-heading" class="hero-title">A clear direction. A shared standard.</h1>
-          <p class="hero-lead">Guided by common principles, thoughtful decisions, and a consistent approach.</p>
-          <p class="hero-cta">
-            <a class="btn" href="#overview">Learn more</a>
-          </p>
-        </div>
-        <div class="hero-visual" aria-hidden="true">
-          <svg class="hero-geometry" viewBox="0 0 260 200" xmlns="http://www.w3.org/2000/svg">
-            <rect width="260" height="200" fill="#ffffff"/>
-            <line x1="40" y1="160" x2="220" y2="160" stroke="#e4e2de" stroke-width="1"/>
-            <rect x="52" y="88" width="48" height="72" fill="none" stroke="#9a9a9a" stroke-width="1.5"/>
-            <rect x="118" y="64" width="40" height="96" fill="none" stroke="#6e6e6e" stroke-width="1.5"/>
-            <rect x="172" y="104" width="36" height="56" fill="none" stroke="#9a9a9a" stroke-width="1.5"/>
-            <circle cx="130" cy="36" r="12" fill="none" stroke="#2c2c2c" stroke-width="1.5"/>
-          </svg>
-        </div>
-      </section>
-    </div>
-
-    <section id="overview" class="section" aria-labelledby="overview-heading">
-      <div class="container reveal">
-        <header class="section-header">
-          <h2 id="overview-heading" class="section-title">Overview</h2>
-          <p class="section-intro">We maintain a steady focus on clarity, consistency, and considered action. Our work is organized around principles that apply across contexts and remain easy to understand.</p>
-        </header>
-        <p class="approach-body">This presence offers a concise view of how we orient our decisions and interactions. It is intended to be readable, adaptable, and appropriate in varied professional settings.</p>
+  <main id="main" class="container container--narrow">
+    <section class="hero-editorial" aria-labelledby="hero-heading">
+      <div class="hero-editorial__intro reveal">
+        <p class="label">Our organization</p>
+        <h1 id="hero-heading" class="hero-editorial__title">
+          <span class="hero-editorial__line hero-editorial__line--primary">A clear direction.</span>
+          <span class="hero-editorial__line hero-editorial__line--secondary">A shared standard.</span>
+        </h1>
+        <p class="hero-editorial__lead">Guided by common principles, thoughtful decisions, and a consistent approach.</p>
+        <p class="hero-editorial__cta">
+          <a class="btn btn-outline" href="#overview">
+            <span>Learn more</span>
+            <svg class="icon-arrow" width="14" height="14" viewBox="0 0 14 14" aria-hidden="true"><path d="M3 11L11 3M11 3H5M11 3V9" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
+        </p>
       </div>
+
+      <figure class="hero-editorial__figure reveal">
+        <img
+          src="images/hero-architecture.jpg"
+          alt=""
+          width="672"
+          height="280"
+          loading="eager"
+          decoding="async"
+        />
+      </figure>
     </section>
 
-    <section id="principles" class="section" aria-labelledby="principles-heading">
-      <div class="container reveal">
-        <header class="section-header">
-          <h2 id="principles-heading" class="section-title">Principles</h2>
-          <p class="section-intro">Four values that carry equal weight in how we operate.</p>
-        </header>
-        <ul class="principles-grid" role="list">
-          <li class="principle-card">
-            <svg class="principle-icon" viewBox="0 0 32 32" aria-hidden="true"><rect x="6" y="6" width="20" height="20" rx="2" fill="none" stroke="currentColor" stroke-width="1.5"/></svg>
-            <h3>Integrity</h3>
-            <p>Acting honestly and consistently.</p>
-          </li>
-          <li class="principle-card">
-            <svg class="principle-icon" viewBox="0 0 32 32" aria-hidden="true"><circle cx="16" cy="16" r="10" fill="none" stroke="currentColor" stroke-width="1.5"/></svg>
-            <h3>Respect</h3>
-            <p>Recognizing different perspectives and experiences.</p>
-          </li>
-          <li class="principle-card">
-            <svg class="principle-icon" viewBox="0 0 32 32" aria-hidden="true"><path d="M8 24 L16 8 L24 24 Z" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/></svg>
-            <h3>Responsibility</h3>
-            <p>Taking ownership of decisions and commitments.</p>
-          </li>
-          <li class="principle-card">
-            <svg class="principle-icon" viewBox="0 0 32 32" aria-hidden="true"><path d="M8 20 L16 12 L24 20" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><line x1="8" y1="24" x2="24" y2="24" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
-            <h3>Continuous improvement</h3>
-            <p>Learning, adapting, and maintaining high standards.</p>
-          </li>
-        </ul>
-      </div>
+    <section id="overview" class="section-editorial section-editorial--overview reveal" aria-labelledby="overview-heading">
+      <h2 id="overview-heading" class="visually-hidden">Overview</h2>
+      <p class="body-copy">We maintain a steady focus on clarity, consistency, and considered action. This presence offers a readable summary of how we orient decisions and interactions across varied professional settings.</p>
     </section>
 
-    <section id="approach" class="section" aria-labelledby="approach-heading">
-      <div class="container reveal">
-        <header class="section-header">
-          <h2 id="approach-heading" class="section-title">Approach</h2>
-        </header>
-        <p class="approach-body">We apply the same standards across our activities: deliberate choices, attention to detail, and regard for those affected by our work. Consistency helps others know what to expect; consideration helps us respond appropriately as circumstances change.</p>
-      </div>
+    <section id="principles" class="section-editorial" aria-labelledby="principles-heading">
+      <h2 id="principles-heading" class="label section-editorial__label reveal">Core principles</h2>
+      <ol class="principles-index reveal" role="list">
+        <li class="principles-index__item">
+          <div class="principles-index__row">
+            <span class="principles-index__num" aria-hidden="true">01</span>
+            <div class="principles-index__head">
+              <h3 class="principles-index__title">Integrity</h3>
+              <span class="principles-index__glyph" aria-hidden="true">
+                <svg width="14" height="14" viewBox="0 0 14 14"><path d="M3 11L11 3M11 3H5M11 3V9" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </span>
+            </div>
+          </div>
+          <p class="principles-index__desc">Acting honestly and consistently.</p>
+        </li>
+        <li class="principles-index__item">
+          <div class="principles-index__row">
+            <span class="principles-index__num" aria-hidden="true">02</span>
+            <div class="principles-index__head">
+              <h3 class="principles-index__title">Respect</h3>
+              <span class="principles-index__glyph" aria-hidden="true">
+                <svg width="14" height="14" viewBox="0 0 14 14"><path d="M3 11L11 3M11 3H5M11 3V9" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </span>
+            </div>
+          </div>
+          <p class="principles-index__desc">Recognizing different perspectives and experiences.</p>
+        </li>
+        <li class="principles-index__item">
+          <div class="principles-index__row">
+            <span class="principles-index__num" aria-hidden="true">03</span>
+            <div class="principles-index__head">
+              <h3 class="principles-index__title">Responsibility</h3>
+              <span class="principles-index__glyph" aria-hidden="true">
+                <svg width="14" height="14" viewBox="0 0 14 14"><path d="M3 11L11 3M11 3H5M11 3V9" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </span>
+            </div>
+          </div>
+          <p class="principles-index__desc">Taking ownership of decisions and commitments.</p>
+        </li>
+        <li class="principles-index__item">
+          <div class="principles-index__row">
+            <span class="principles-index__num" aria-hidden="true">04</span>
+            <div class="principles-index__head">
+              <h3 class="principles-index__title">Continuous improvement</h3>
+              <span class="principles-index__glyph" aria-hidden="true">
+                <svg width="14" height="14" viewBox="0 0 14 14"><path d="M3 11L11 3M11 3H5M11 3V9" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </span>
+            </div>
+          </div>
+          <p class="principles-index__desc">Learning, adapting, and maintaining high standards.</p>
+        </li>
+      </ol>
     </section>
 
-    <section id="contact" class="section" aria-labelledby="contact-heading">
-      <div class="container reveal">
-        <header class="section-header">
-          <h2 id="contact-heading" class="section-title">Contact</h2>
-        </header>
-        <div class="contact-prompt">
-          <p>If you would like to reach us, use the channels your organization has designated for external correspondence. A contact form is available for structured inquiries.</p>
-          <p>
-            <a class="btn secondary" href="contact.html">Open contact form</a>
-          </p>
-        </div>
-      </div>
+    <section id="contact" class="section-editorial section-editorial--contact reveal" aria-labelledby="contact-heading">
+      <h2 id="contact-heading" class="label section-editorial__label">Contact</h2>
+      <p class="body-copy">To reach us, use the channels designated for external correspondence.</p>
+      <p>
+        <a class="btn btn-outline" href="contact.html">
+          <span>Open contact form</span>
+          <svg class="icon-arrow" width="14" height="14" viewBox="0 0 14 14" aria-hidden="true"><path d="M3 11L11 3M11 3H5M11 3V9" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </a>
+      </p>
     </section>
   </main>
 
-  <footer class="site-footer" role="contentinfo">
-    <div class="container footer-inner">
-      <div class="footer-brand">
-        <div class="wordmark" data-org-name>Organization</div>
-        <p class="muted">A neutral, professional presence.</p>
-        <nav class="footer-legal" aria-label="Legal">
-          <a href="#">Privacy policy</a>
-          <a href="#">Terms of use</a>
-          <a href="#">Accessibility</a>
-        </nav>
-      </div>
-      <div class="footer-links">
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="#overview">Overview</a></li>
-          <li><a href="#principles">Principles</a></li>
-          <li><a href="#approach">Approach</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </div>
-      <div class="footer-meta">
-        <p class="muted">&copy; <span id="year"></span> <span data-org-name>Organization</span>. All rights reserved.</p>
-        <p class="muted">Legal entity name — placeholder. Registered address — placeholder.</p>
-      </div>
+  <footer class="site-footer site-footer--manifesto" role="contentinfo">
+    <div class="container container--narrow">
+      <p class="footer-manifesto">Neutral typography · Universal design · No industry disclosure</p>
+      <p class="footer-meta-line muted">
+        <span data-org-name>Organization</span> · <span id="year"></span> ·
+        <a href="#">Privacy</a> · <a href="#">Terms</a>
+      </p>
     </div>
   </footer>
 </body>
