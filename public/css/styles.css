@@ -428,7 +428,9 @@ textarea:focus {
   border: 1px solid var(--accent);
   cursor: pointer;
   text-decoration: none;
-  display: inline-block;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
   transition: background 0.15s ease, color 0.15s ease;
   font-weight: 600;
   font-size: 0.9375rem;
@@ -764,18 +766,53 @@ textarea:focus {
   color: var(--gray);
 }
 
-.icon-emoji {
+.ui-icon {
+  display: block;
   flex-shrink: 0;
-  font-size: 1rem;
-  line-height: 1;
+  width: 1rem;
+  height: 1rem;
+  color: var(--gray);
 }
 
-.footer-emojis {
-  letter-spacing: 0.2em;
+.ui-icon--sm {
+  width: 0.875rem;
+  height: 0.875rem;
 }
 
-.principles-index__glyph.icon-emoji {
-  font-size: 1.125rem;
+.ui-icon--md {
+  width: 1.125rem;
+  height: 1.125rem;
+}
+
+.ui-icon--lg {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+.ui-icon--xs {
+  width: 0.8125rem;
+  height: 0.8125rem;
+}
+
+.footer-icons {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  vertical-align: middle;
+  margin-left: 4px;
+}
+
+.principles-index__glyph .ui-icon {
+  color: var(--gray);
+}
+
+.btn .ui-icon {
+  color: inherit;
+  opacity: 0.75;
+}
+
+.card .icon .ui-icon {
+  color: var(--gray);
 }
 
 .section-editorial {
