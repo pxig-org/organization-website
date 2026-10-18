@@ -11,13 +11,22 @@ A modern, neutral, multi-page organizational website built with semantic HTML, C
 
 ## Local preview
 
-Serve the project root with any static file server, for example:
+**Cloudflare Workers (recommended):**
 
 ```bash
-python3 -m http.server 8080
+npm install
+npm run preview
 ```
 
-Then open `http://localhost:8080` in your browser.
+`wrangler.jsonc` includes a required empty `"previews": {}` block for `wrangler preview` (open beta).
+
+**Static server (optional):**
+
+```bash
+python3 -m http.server 8080 --directory public
+```
+
+Then open `http://localhost:8080`.
 
 ## Customization
 
