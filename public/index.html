@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="description" content="A neutral organizational presence guided by shared principles and consistent standards." />
+  <title>Organization</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <script defer src="js/main.js"></script>
+</head>
+<body class="landing">
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header site-header--editorial" role="banner">
+    <div class="container container--narrow header-inner">
+      <div class="brand">
+        <a class="brand-link" href="index.html" aria-label="Organization home">
+          <svg class="brand-mark" width="22" height="22" viewBox="0 0 22 22" aria-hidden="true" focusable="false">
+            <rect x="1" y="1" width="20" height="20" rx="3" fill="none" stroke="currentColor" stroke-width="1.5"/>
+          </svg>
+          <span class="wordmark-text" data-org-name>Organization</span>
+        </a>
+      </div>
+      <nav class="main-nav" role="navigation" aria-label="Main navigation">
+        <button type="button" class="nav-toggle" aria-expanded="false" aria-controls="nav-list" aria-label="Toggle menu">&#9776;</button>
+        <ul id="nav-list" class="nav-list nav-list--editorial">
+          <li><a href="#overview">Overview</a></li>
+          <li><a href="#principles">Principles</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main" class="container container--narrow">
+    <section class="hero-editorial" aria-labelledby="hero-heading">
+      <div class="hero-editorial__intro reveal">
+        <p class="label">Our organization</p>
+        <h1 id="hero-heading" class="hero-editorial__title">
+          <span class="hero-editorial__line hero-editorial__line--primary">A clear direction.</span>
+          <span class="hero-editorial__line hero-editorial__line--secondary">A shared standard.</span>
+        </h1>
+        <p class="hero-editorial__lead">Guided by common principles, thoughtful decisions, and a consistent approach.</p>
+        <p class="hero-editorial__cta">
+          <a class="btn btn-outline" href="#overview">
+            <span>Learn more</span>
+            <svg class="ui-icon ui-icon--sm" aria-hidden="true"><use href="icons.svg#icon-chevron-down"></use></svg>
+          </a>
+        </p>
+      </div>
+
+      <figure class="hero-editorial__figure reveal">
+        <img
+          src="images/hero-architecture.jpg"
+          alt=""
+          width="672"
+          height="280"
+          loading="eager"
+          decoding="async"
+        />
+      </figure>
+    </section>
+
+    <section id="overview" class="section-editorial section-editorial--overview reveal" aria-labelledby="overview-heading">
+      <h2 id="overview-heading" class="visually-hidden">Overview</h2>
+      <p class="body-copy">We maintain a steady focus on clarity, consistency, and considered action. Our decisions and interactions are guided by shared standards that apply across the work we do.</p>
+    </section>
+
+    <section id="principles" class="section-editorial" aria-labelledby="principles-heading">
+      <h2 id="principles-heading" class="label section-editorial__label reveal">Core principles</h2>
+      <ol class="principles-index reveal" role="list">
+        <li class="principles-index__item">
+          <div class="principles-index__row">
+            <span class="principles-index__num" aria-hidden="true">01</span>
+            <div class="principles-index__head">
+              <h3 class="principles-index__title">Integrity</h3>
+              <span class="principles-index__glyph" aria-hidden="true"><svg class="ui-icon ui-icon--md"><use href="icons.svg#icon-shield"></use></svg></span>
+            </div>
+          </div>
+          <p class="principles-index__desc">Acting honestly and consistently.</p>
+        </li>
+        <li class="principles-index__item">
+          <div class="principles-index__row">
+            <span class="principles-index__num" aria-hidden="true">02</span>
+            <div class="principles-index__head">
+              <h3 class="principles-index__title">Respect</h3>
+              <span class="principles-index__glyph" aria-hidden="true"><svg class="ui-icon ui-icon--md"><use href="icons.svg#icon-people"></use></svg></span>
+            </div>
+          </div>
+          <p class="principles-index__desc">Recognizing different perspectives and experiences.</p>
+        </li>
+        <li class="principles-index__item">
+          <div class="principles-index__row">
+            <span class="principles-index__num" aria-hidden="true">03</span>
+            <div class="principles-index__head">
+              <h3 class="principles-index__title">Responsibility</h3>
+              <span class="principles-index__glyph" aria-hidden="true"><svg class="ui-icon ui-icon--md"><use href="icons.svg#icon-clipboard"></use></svg></span>
+            </div>
+          </div>
+          <p class="principles-index__desc">Taking ownership of decisions and commitments.</p>
+        </li>
+        <li class="principles-index__item">
+          <div class="principles-index__row">
+            <span class="principles-index__num" aria-hidden="true">04</span>
+            <div class="principles-index__head">
+              <h3 class="principles-index__title">Continuous improvement</h3>
+              <span class="principles-index__glyph" aria-hidden="true"><svg class="ui-icon ui-icon--md"><use href="icons.svg#icon-trend"></use></svg></span>
+            </div>
+          </div>
+          <p class="principles-index__desc">Learning, adapting, and maintaining high standards.</p>
+        </li>
+      </ol>
+    </section>
+
+    <section id="contact" class="section-editorial section-editorial--contact reveal" aria-labelledby="contact-heading">
+      <h2 id="contact-heading" class="label section-editorial__label">Contact</h2>
+      <p class="body-copy">We welcome questions and requests. Send us a message and we will respond as soon as we can.</p>
+      <p>
+        <a class="btn btn-outline" href="contact.html">
+          <span>Contact us</span>
+          <svg class="ui-icon ui-icon--sm" aria-hidden="true"><use href="icons.svg#icon-mail"></use></svg>
+        </a>
+      </p>
+    </section>
+  </main>
+
+  <footer class="site-footer site-footer--manifesto" role="contentinfo">
+    <div class="container container--narrow">
+      <p class="footer-manifesto">Clarity · Consistency · Consideration</p>
+      <p class="footer-meta-line muted">
+        <span data-org-name>Organization</span> · <span id="year"></span> ·
+        <span class="footer-icons" aria-hidden="true">
+          <svg class="ui-icon ui-icon--xs"><use href="icons.svg#icon-lock"></use></svg>
+          <svg class="ui-icon ui-icon--xs"><use href="icons.svg#icon-document"></use></svg>
+          <svg class="ui-icon ui-icon--xs"><use href="icons.svg#icon-accessibility"></use></svg>
+        </span>
+      </p>
+    </div>
+  </footer>
+</body>
+</html>
