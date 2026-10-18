@@ -7,64 +7,53 @@
   <link rel="stylesheet" href="css/styles.css">
   <script defer src="js/main.js"></script>
 </head>
-<body>
+<body class="landing">
   <a class="skip-link" href="#main">Skip to content</a>
 
-  <header class="site-header" role="banner">
-    <div class="container header-inner">
+  <header class="site-header site-header--editorial" role="banner">
+    <div class="container container--narrow header-inner">
       <div class="brand">
         <a class="brand-link" href="index.html" aria-label="Organization home">
-          <svg class="brand-mark" width="28" height="28" viewBox="0 0 28 28" aria-hidden="true" focusable="false">
-            <rect x="1" y="1" width="26" height="26" rx="4" fill="none" stroke="currentColor" stroke-width="1.5"/>
-            <circle cx="14" cy="14" r="5" fill="currentColor"/>
+          <svg class="brand-mark" width="22" height="22" viewBox="0 0 22 22" aria-hidden="true" focusable="false">
+            <rect x="1" y="1" width="20" height="20" rx="3" fill="none" stroke="currentColor" stroke-width="1.5"/>
           </svg>
           <span class="wordmark-text" data-org-name>Organization</span>
         </a>
       </div>
       <nav class="main-nav" role="navigation" aria-label="Main navigation">
         <button type="button" class="nav-toggle" aria-expanded="false" aria-controls="nav-list" aria-label="Toggle menu">&#9776;</button>
-        <ul id="nav-list" class="nav-list">
-          <li><a href="index.html">Home</a></li>
+        <ul id="nav-list" class="nav-list nav-list--editorial">
           <li><a href="index.html#overview">Overview</a></li>
           <li><a href="index.html#principles" aria-current="page">Principles</a></li>
-          <li><a href="index.html#approach">Approach</a></li>
           <li><a href="contact.html">Contact</a></li>
         </ul>
       </nav>
     </div>
   </header>
 
-  <main id="main" class="container">
+  <main id="main" class="container container--narrow">
     <section class="values-grid" aria-labelledby="values-heading">
-      <h1 id="values-heading">Principles</h1>
+      <h1 id="values-heading" class="label">Core principles</h1>
       <p class="muted">Four values that carry equal weight in how we operate.</p>
 
       <ul class="grid" role="list">
         <li class="card">
-          <div class="icon" aria-hidden="true">
-            <svg width="32" height="32" viewBox="0 0 32 32"><rect x="6" y="6" width="20" height="20" rx="2" fill="none" stroke="currentColor" stroke-width="1.5"/></svg>
-          </div>
+          <div class="icon icon-emoji" aria-hidden="true">✨</div>
           <h3>Integrity</h3>
           <p>Acting honestly and consistently.</p>
         </li>
         <li class="card">
-          <div class="icon" aria-hidden="true">
-            <svg width="32" height="32" viewBox="0 0 32 32"><circle cx="16" cy="16" r="10" fill="none" stroke="currentColor" stroke-width="1.5"/></svg>
-          </div>
+          <div class="icon icon-emoji" aria-hidden="true">💬</div>
           <h3>Respect</h3>
           <p>Recognizing different perspectives and experiences.</p>
         </li>
         <li class="card">
-          <div class="icon" aria-hidden="true">
-            <svg width="32" height="32" viewBox="0 0 32 32"><path d="M8 24 L16 8 L24 24 Z" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/></svg>
-          </div>
+          <div class="icon icon-emoji" aria-hidden="true">📋</div>
           <h3>Responsibility</h3>
           <p>Taking ownership of decisions and commitments.</p>
         </li>
         <li class="card">
-          <div class="icon" aria-hidden="true">
-            <svg width="32" height="32" viewBox="0 0 32 32"><path d="M8 20 L16 12 L24 20" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><line x1="8" y1="24" x2="24" y2="24" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
-          </div>
+          <div class="icon icon-emoji" aria-hidden="true">📈</div>
           <h3>Continuous improvement</h3>
           <p>Learning, adapting, and maintaining high standards.</p>
         </li>
@@ -72,29 +61,13 @@
     </section>
   </main>
 
-  <footer class="site-footer" role="contentinfo">
-    <div class="container footer-inner">
-      <div class="footer-brand">
-        <div class="wordmark" data-org-name>Organization</div>
-        <nav class="footer-legal" aria-label="Legal">
-          <a href="#">Privacy policy</a>
-          <a href="#">Terms of use</a>
-          <a href="#">Accessibility</a>
-        </nav>
-      </div>
-      <div class="footer-links">
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="index.html#overview">Overview</a></li>
-          <li><a href="index.html#principles">Principles</a></li>
-          <li><a href="index.html#approach">Approach</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
-      </div>
-      <div class="footer-meta">
-        <p class="muted">&copy; <span id="year"></span> <span data-org-name>Organization</span>. All rights reserved.</p>
-        <p class="muted">Legal entity name — placeholder. Registered address — placeholder.</p>
-      </div>
+  <footer class="site-footer site-footer--manifesto" role="contentinfo">
+    <div class="container container--narrow">
+      <p class="footer-manifesto">Clarity · Consistency · Consideration</p>
+      <p class="footer-meta-line muted">
+        <span data-org-name>Organization</span> · <span id="year"></span> ·
+        <span class="footer-emojis" aria-hidden="true">🔒 📄 ♿</span>
+      </p>
     </div>
   </footer>
 </body>

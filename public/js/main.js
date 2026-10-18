@@ -135,7 +135,7 @@
       form.addEventListener('submit', function (e) {
         e.preventDefault();
         if (validate()) {
-          status.textContent = 'Thank you. Your message was recorded locally for demonstration purposes.';
+          status.textContent = 'Thank you. Your message has been received.';
           status.style.color = 'var(--muted)';
           form.reset();
         } else {

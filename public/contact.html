@@ -34,9 +34,9 @@
   <main id="main" class="container container--narrow">
     <section class="section-editorial section-editorial--contact">
       <h1 class="label">Contact</h1>
-      <p class="body-copy">Use this form to send a structured inquiry. Connect a backend endpoint when you are ready to receive messages.</p>
+      <p class="body-copy">Share your question or request using the form below. We aim to reply within a reasonable time.</p>
 
-      <form id="contact-form" class="contact-form" novalidate aria-describedby="form-note">
+      <form id="contact-form" class="contact-form" novalidate>
         <div class="form-row">
           <label for="name">Name</label>
           <input id="name" name="name" type="text" required minlength="2" autocomplete="name" aria-required="true" />
@@ -67,11 +67,9 @@
         </div>
 
         <div class="form-actions">
-          <button type="submit" class="btn">Send message</button>
+          <button type="submit" class="btn">Send message <span class="icon-emoji" aria-hidden="true">✉️</span></button>
           <button type="button" class="btn secondary" id="btn-reset">Reset</button>
         </div>
-
-        <p id="form-note" class="muted small-note">This form is a front-end demonstration. No data is transmitted until you configure a server endpoint.</p>
 
         <div id="form-status" role="status" aria-live="polite"></div>
       </form>
@@ -80,10 +78,10 @@
 
   <footer class="site-footer site-footer--manifesto" role="contentinfo">
     <div class="container container--narrow">
-      <p class="footer-manifesto">Neutral typography · Universal design · No industry disclosure</p>
+      <p class="footer-manifesto">Clarity · Consistency · Consideration</p>
       <p class="footer-meta-line muted">
         <span data-org-name>Organization</span> · <span id="year"></span> ·
-        <a href="#">Privacy</a> · <a href="#">Terms</a>
+        <span class="footer-emojis" aria-hidden="true">🔒 📄 ♿</span>
       </p>
     </div>
   </footer>
