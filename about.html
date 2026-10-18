@@ -2,23 +2,32 @@
 <html lang="en">
 <head>
   <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Mission, vision, and approach — Organization." />
   <title>Organization — About</title>
-  <link rel="stylesheet" href="css/styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,400&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
   <script defer src="js/main.js"></script>
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
-  <div class="announcement">We're currently refining our digital presence.</div>
+
+  <div class="announcement" role="region" aria-label="Site announcement">
+    We're currently refining our digital presence.
+  </div>
 
   <header class="site-header" role="banner">
     <div class="container header-inner">
       <div class="brand">
-        <button class="brand-logo" aria-hidden="true">Organization</button>
+        <a class="wordmark" href="index.html">Organization</a>
         <span class="status-pill">Currently in development</span>
       </div>
-      <nav class="main-nav" role="navigation" aria-label="Main navigation">
-        <button class="nav-toggle" aria-expanded="false" aria-controls="nav-list" aria-label="Toggle menu">&#9776;</button>
+      <nav class="main-nav" aria-label="Main navigation">
+        <button type="button" class="nav-toggle" aria-expanded="false" aria-controls="nav-list" aria-label="Open menu">
+          <span aria-hidden="true">☰</span>
+        </button>
         <ul id="nav-list" class="nav-list">
           <li><a href="index.html">Home</a></li>
           <li><a href="about.html" aria-current="page">About</a></li>
@@ -29,44 +38,65 @@
     </div>
   </header>
 
-  <main id="main" class="container">
-    <article class="about">
-      <header>
+  <main id="main">
+    <div class="container about">
+      <header class="page-header">
         <h1>About Organization</h1>
-        <p class="muted">We're continuing to develop our approach, capabilities, and digital presence.</p>
+        <p class="lead">We're continuing to develop our approach, capabilities, and digital presence.</p>
       </header>
 
-      <section aria-labelledby="mission">
-        <h2 id="mission">Mission</h2>
-        <p>To apply thoughtful, pragmatic approaches that foster clarity, collaboration, and sustainable progress.</p>
-      </section>
+      <article>
+        <section aria-labelledby="mission-heading">
+          <h2 id="mission-heading">Mission</h2>
+          <p>
+            To pursue work that is thoughtful, clear, and accountable — helping ideas move forward through collaboration, careful judgment, and steady improvement.
+          </p>
+        </section>
 
-      <section aria-labelledby="vision">
-        <h2 id="vision">Vision</h2>
-        <p>To be a reliable partner for organizations and people seeking well-considered solutions and continuous improvement.</p>
-      </section>
+        <section aria-labelledby="vision-heading">
+          <h2 id="vision-heading">Vision</h2>
+          <p>
+            To grow into a trusted partner for people and teams who value integrity and long-term thinking — adapting as needs change while staying grounded in our principles.
+          </p>
+        </section>
 
-      <section aria-labelledby="approach">
-        <h2 id="approach">Approach & principles</h2>
-        <p>We emphasize careful planning, clear communication, and iterative learning. Our work is guided by responsibility and respect for impact — we prioritize decisions that balance immediate needs with long-term resilience.</p>
-        <ul class="muted small-note">
-          <li>Thoughtful work over rapid shortcuts</li>
-          <li>Responsible growth and sustainable choices</li>
-          <li>Collaborative problem-solving and open communication</li>
-          <li>Continuous evaluation and improvement</li>
-        </ul>
-      </section>
+        <section aria-labelledby="approach-heading">
+          <h2 id="approach-heading">Approach &amp; principles</h2>
+          <p>
+            We believe good outcomes come from listening, learning, and refining. We favor transparency over noise, substance over spectacle, and progress that can be sustained — not shortcuts that create new problems later.
+          </p>
+          <ul>
+            <li>Thoughtful work and deliberate decision-making</li>
+            <li>Responsible growth that respects people and context</li>
+            <li>Collaboration built on openness and mutual respect</li>
+            <li>Continuous improvement through feedback and reflection</li>
+          </ul>
+        </section>
 
-      <p class="muted small-note">This page is intentionally generic and designed to be customized as the organization and its story become defined.</p>
-    </article>
+        <p class="small-note muted">
+          This page is intentionally generic so you can replace it with your organization's story when the time is right — without rewriting the structure of the site.
+        </p>
+      </article>
+
+      <section class="cta-band" aria-labelledby="about-cta">
+        <h2 id="about-cta">Explore our values</h2>
+        <p>See how integrity, clarity, and collaboration shape the way we work.</p>
+        <a class="btn" href="values.html">View values</a>
+      </section>
+    </div>
   </main>
 
   <footer class="site-footer" role="contentinfo">
     <div class="container footer-inner">
       <div class="footer-brand">
-        <div class="wordmark">Organization</div>
+        <span class="wordmark">Organization</span>
+        <p class="muted small-note">Thoughtful work. Responsible growth.</p>
+        <div class="footer-cta">
+          <a class="btn btn-secondary" href="contact.html">Get in touch</a>
+        </div>
       </div>
       <div class="footer-links">
+        <h2>Navigate</h2>
         <ul>
           <li><a href="index.html">Home</a></li>
           <li><a href="about.html">About</a></li>
@@ -75,8 +105,9 @@
         </ul>
       </div>
       <div class="footer-meta">
-        <p class="muted">Contact (placeholder): contact@organization.example — placeholder</p>
-        <p class="muted">&copy; <span id="year"></span> Organization. <span class="work-in-progress">This website is a work in progress. More information will be available soon.</span></p>
+        <p class="muted small-note">Email (placeholder): <span>inquiries@example.placeholder</span></p>
+        <p class="muted">&copy; <span data-year></span> Organization.</p>
+        <span class="work-in-progress">This website is a work in progress. More information will be available soon.</span>
       </div>
     </div>
   </footer>
