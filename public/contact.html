@@ -5,7 +5,6 @@
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Organization — Contact</title>
   <link rel="stylesheet" href="css/styles.css">
-  <script defer src="js/main.js"></script>
 </head>
 <body class="landing">
   <a class="skip-link" href="#main">Skip to content</a>
@@ -17,16 +16,18 @@
           <svg class="brand-mark" width="22" height="22" viewBox="0 0 22 22" aria-hidden="true" focusable="false">
             <rect x="1" y="1" width="20" height="20" rx="3" fill="none" stroke="currentColor" stroke-width="1.5"/>
           </svg>
-          <span class="wordmark-text" data-org-name>Organization</span>
+          <span class="wordmark-text">Organization</span>
         </a>
       </div>
       <nav class="main-nav" role="navigation" aria-label="Main navigation">
-        <button type="button" class="nav-toggle" aria-expanded="false" aria-controls="nav-list" aria-label="Toggle menu">&#9776;</button>
-        <ul id="nav-list" class="nav-list nav-list--editorial">
-          <li><a href="index.html#overview">Overview</a></li>
-          <li><a href="index.html#principles">Principles</a></li>
-          <li><a href="contact.html" aria-current="page">Contact</a></li>
-        </ul>
+        <details class="nav-menu">
+          <summary class="nav-toggle" aria-label="Toggle menu">&#9776;</summary>
+          <ul id="nav-list" class="nav-list nav-list--editorial">
+            <li><a href="index.html#overview">Overview</a></li>
+            <li><a href="index.html#principles">Principles</a></li>
+            <li><a href="contact.html" aria-current="page">Contact</a></li>
+          </ul>
+        </details>
       </nav>
     </div>
   </header>
@@ -36,42 +37,36 @@
       <h1 class="label">Contact</h1>
       <p class="body-copy">Share your question or request using the form below. We aim to reply within a reasonable time.</p>
 
-      <form id="contact-form" class="contact-form" novalidate>
+      <form class="contact-form" method="get" action="contact.html">
         <div class="form-row">
           <label for="name">Name</label>
-          <input id="name" name="name" type="text" required minlength="2" autocomplete="name" aria-required="true" />
-          <div class="error" id="error-name" aria-live="polite"></div>
+          <input id="name" name="name" type="text" required minlength="2" autocomplete="name" />
         </div>
 
         <div class="form-row">
           <label for="email">Email address</label>
-          <input id="email" name="email" type="email" required autocomplete="email" aria-required="true" />
-          <div class="error" id="error-email" aria-live="polite"></div>
+          <input id="email" name="email" type="email" required autocomplete="email" />
         </div>
 
         <div class="form-row">
           <label for="subject">Subject</label>
-          <select id="subject" name="subject" required aria-required="true">
+          <select id="subject" name="subject" required>
             <option value="">Select a subject</option>
             <option value="general">General inquiry</option>
             <option value="information">Request for information</option>
             <option value="other">Other</option>
           </select>
-          <div class="error" id="error-subject" aria-live="polite"></div>
         </div>
 
         <div class="form-row">
           <label for="message">Message</label>
-          <textarea id="message" name="message" rows="6" required minlength="10" aria-required="true"></textarea>
-          <div class="error" id="error-message" aria-live="polite"></div>
+          <textarea id="message" name="message" rows="6" required minlength="10"></textarea>
         </div>
 
         <div class="form-actions">
           <button type="submit" class="btn">Send message <svg class="ui-icon ui-icon--sm" aria-hidden="true"><use href="icons.svg#icon-mail"></use></svg></button>
-          <button type="button" class="btn secondary" id="btn-reset">Reset</button>
+          <button type="reset" class="btn secondary">Reset</button>
         </div>
-
-        <div id="form-status" role="status" aria-live="polite"></div>
       </form>
     </section>
   </main>
@@ -80,7 +75,7 @@
     <div class="container container--narrow">
       <p class="footer-manifesto">Clarity · Consistency · Consideration</p>
       <p class="footer-meta-line muted">
-        <span data-org-name>Organization</span> · <span id="year"></span> ·
+        Organization · 2026 ·
         <span class="footer-icons" aria-hidden="true">
           <svg class="ui-icon ui-icon--xs"><use href="icons.svg#icon-lock"></use></svg>
           <svg class="ui-icon ui-icon--xs"><use href="icons.svg#icon-document"></use></svg>

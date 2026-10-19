@@ -6,7 +6,6 @@
   <meta name="description" content="A neutral organizational presence guided by shared principles and consistent standards." />
   <title>Organization</title>
   <link rel="stylesheet" href="css/styles.css">
-  <script defer src="js/main.js"></script>
 </head>
 <body class="landing">
   <a class="skip-link" href="#main">Skip to content</a>
@@ -18,38 +17,34 @@
           <svg class="brand-mark" width="22" height="22" viewBox="0 0 22 22" aria-hidden="true" focusable="false">
             <rect x="1" y="1" width="20" height="20" rx="3" fill="none" stroke="currentColor" stroke-width="1.5"/>
           </svg>
-          <span class="wordmark-text" data-org-name>Organization</span>
+          <span class="wordmark-text">Organization</span>
         </a>
       </div>
       <nav class="main-nav" role="navigation" aria-label="Main navigation">
-        <button type="button" class="nav-toggle" aria-expanded="false" aria-controls="nav-list" aria-label="Toggle menu">&#9776;</button>
-        <ul id="nav-list" class="nav-list nav-list--editorial">
-          <li><a href="#overview">Overview</a></li>
-          <li><a href="#principles">Principles</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
+        <details class="nav-menu">
+          <summary class="nav-toggle" aria-label="Toggle menu">&#9776;</summary>
+          <ul id="nav-list" class="nav-list nav-list--editorial">
+            <li><a href="#overview">Overview</a></li>
+            <li><a href="#principles">Principles</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </details>
       </nav>
     </div>
   </header>
 
   <main id="main" class="container container--narrow">
     <section class="hero-editorial" aria-labelledby="hero-heading">
-      <div class="hero-editorial__intro reveal">
+      <div class="hero-editorial__intro">
         <p class="label">Our organization</p>
         <h1 id="hero-heading" class="hero-editorial__title">
           <span class="hero-editorial__line hero-editorial__line--primary">A clear direction.</span>
           <span class="hero-editorial__line hero-editorial__line--secondary">A shared standard.</span>
         </h1>
         <p class="hero-editorial__lead">Guided by common principles, thoughtful decisions, and a consistent approach.</p>
-        <p class="hero-editorial__cta">
-          <a class="btn btn-outline" href="#overview">
-            <span>Learn more</span>
-            <svg class="ui-icon ui-icon--sm" aria-hidden="true"><use href="icons.svg#icon-chevron-down"></use></svg>
-          </a>
-        </p>
       </div>
 
-      <figure class="hero-editorial__figure reveal">
+      <figure class="hero-editorial__figure">
         <img
           src="images/hero-architecture.jpg"
           alt=""
@@ -61,14 +56,18 @@
       </figure>
     </section>
 
-    <section id="overview" class="section-editorial section-editorial--overview reveal" aria-labelledby="overview-heading">
-      <h2 id="overview-heading" class="visually-hidden">Overview</h2>
-      <p class="body-copy">We maintain a steady focus on clarity, consistency, and considered action. Our decisions and interactions are guided by shared standards that apply across the work we do.</p>
+    <section id="overview" class="section-editorial section-editorial--overview" aria-labelledby="overview-heading">
+      <h2 id="overview-heading" class="label section-editorial__label">Overview</h2>
+      <p class="body-copy">A concise view of our orientation and standards.</p>
+      <h3 class="overview-subheading" id="orientation">Orientation</h3>
+      <p class="body-copy">We maintain a steady focus on clarity, consistency, and considered action. Our work is organized around principles that apply across contexts and remain easy to understand.</p>
+      <h3 class="overview-subheading" id="standards">Standards</h3>
+      <p class="body-copy">We orient decisions and interactions with the same care in every setting, so colleagues and partners know what to expect from us.</p>
     </section>
 
     <section id="principles" class="section-editorial" aria-labelledby="principles-heading">
-      <h2 id="principles-heading" class="label section-editorial__label reveal">Core principles</h2>
-      <ol class="principles-index reveal" role="list">
+      <h2 id="principles-heading" class="label section-editorial__label">Core principles</h2>
+      <ol class="principles-index" role="list">
         <li class="principles-index__item">
           <div class="principles-index__row">
             <span class="principles-index__num" aria-hidden="true">01</span>
@@ -112,7 +111,7 @@
       </ol>
     </section>
 
-    <section id="contact" class="section-editorial section-editorial--contact reveal" aria-labelledby="contact-heading">
+    <section id="contact" class="section-editorial section-editorial--contact" aria-labelledby="contact-heading">
       <h2 id="contact-heading" class="label section-editorial__label">Contact</h2>
       <p class="body-copy">We welcome questions and requests. Send us a message and we will respond as soon as we can.</p>
       <p>
@@ -128,7 +127,7 @@
     <div class="container container--narrow">
       <p class="footer-manifesto">Clarity · Consistency · Consideration</p>
       <p class="footer-meta-line muted">
-        <span data-org-name>Organization</span> · <span id="year"></span> ·
+        Organization · 2026 ·
         <span class="footer-icons" aria-hidden="true">
           <svg class="ui-icon ui-icon--xs"><use href="icons.svg#icon-lock"></use></svg>
           <svg class="ui-icon ui-icon--xs"><use href="icons.svg#icon-document"></use></svg>
