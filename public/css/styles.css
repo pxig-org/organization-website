@@ -10,6 +10,7 @@
   --radius: 10px;
   --max-width: 1080px;
   --narrow-width: 480px;
+  --narrow-width-desktop: 720px;
   --container-padding: 20px;
   --space: 24px;
   --focus: 3px solid rgba(44, 44, 44, 0.22);
@@ -550,12 +551,53 @@ textarea:focus {
   }
 }
 
+.nav-menu {
+  position: relative;
+}
+
+.nav-menu > summary {
+  list-style: none;
+}
+
+.nav-menu > summary::-webkit-details-marker {
+  display: none;
+}
+
+@media (min-width: 601px) {
+  .container--narrow {
+    max-width: var(--narrow-width-desktop);
+  }
+
+  .hero-editorial__lead {
+    max-width: 28em;
+    font-size: 1rem;
+  }
+
+  .hero-editorial__title {
+    font-size: 2.1rem;
+  }
+
+  .nav-menu > summary {
+    display: none;
+  }
+
+  .nav-menu .nav-list {
+    display: flex;
+    position: static;
+    background: transparent;
+    border: none;
+    box-shadow: none;
+    padding: 0;
+    min-width: 0;
+  }
+}
+
 @media (max-width: 600px) {
   .nav-toggle {
     display: inline-block;
   }
 
-  .nav-list {
+  .nav-menu .nav-list {
     position: absolute;
     right: 0;
     top: calc(100% + 8px);
@@ -565,13 +607,8 @@ textarea:focus {
     padding: 8px;
     border-radius: var(--radius);
     border: 1px solid var(--border);
-    display: none;
     min-width: 200px;
     box-shadow: 0 4px 24px rgba(44, 44, 44, 0.06);
-  }
-
-  .nav-list.show {
-    display: flex;
   }
 
   .section {
@@ -593,24 +630,6 @@ textarea:focus {
   *::after {
     transition: none !important;
     animation: none !important;
-  }
-}
-
-.reveal {
-  opacity: 0;
-  transform: translateY(8px);
-  transition: opacity 0.5s ease, transform 0.5s ease;
-}
-
-.reveal.is-visible {
-  opacity: 1;
-  transform: none;
-}
-
-@media (prefers-reduced-motion: reduce) {
-  .reveal {
-    opacity: 1;
-    transform: none;
   }
 }
 
@@ -823,6 +842,13 @@ textarea:focus {
   padding-top: 32px;
 }
 
+.overview-subheading {
+  margin: 24px 0 10px;
+  font-size: 0.9375rem;
+  font-weight: 700;
+  color: var(--charcoal);
+}
+
 .section-editorial__label {
   margin-bottom: 20px;
 }
@@ -921,6 +947,16 @@ textarea:focus {
 .footer-meta-line a:hover,
 .footer-meta-line a:focus-visible {
   color: var(--charcoal);
+}
+
+@media (min-width: 1024px) {
+  .container--narrow {
+    max-width: min(var(--narrow-width-desktop), 85vw);
+  }
+
+  body.landing {
+    font-size: 17px;
+  }
 }
 
 @media (max-width: 600px) {
